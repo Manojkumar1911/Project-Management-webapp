@@ -1,6 +1,6 @@
-import { useRef } from "react";
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import {
+  Provider,
   TypedUseSelectorHook,
   useDispatch,
   useSelector,
@@ -21,6 +21,7 @@ import {
 } from "redux-persist";
 import { PersistGate } from "redux-persist/integration/react";
 import createWebStorage from "redux-persist/lib/storage/createWebStorage";
+import { useRef } from "react";
 
 /* REDUX PERSISTENCE */
 const createNoopStorage = () => {
