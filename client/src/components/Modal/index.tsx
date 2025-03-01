@@ -8,9 +8,10 @@ type Props = {
   isOpen: boolean;
   onClose: () => void;
   name: string;
+  id:string
 };
 
-const Modal = ({ children, isOpen, onClose, name }: Props) => {
+const Modal = ({ children, isOpen, onClose, name,id }: Props) => {
   if (!isOpen) return null;
 
   return ReactDOM.createPortal(
